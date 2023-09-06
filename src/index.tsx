@@ -5,12 +5,20 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { StyleProvider,ThemePicker } from 'vcc-ui';
 
+import { links } from '@volvo-cars/css/links';
+
+const fragment = document.createDocumentFragment();
+for (const link of links()) {
+  fragment.append(Object.assign(document.createElement('link'), link));
+}
+document.head.append(fragment);
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <StyleProvider>
-    <ThemePicker variant="light">
+    <ThemePicker variant="dark">
       <App />
     </ThemePicker>
   </StyleProvider>
