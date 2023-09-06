@@ -1,6 +1,7 @@
 
-import CardProps from "../interfaces/CardProps";
-//import './styles.scss';
+import CardProps from "../../interfaces/CardProps";
+import './card.styles.scss';
+import { View } from 'vcc-ui';
 
 const Card: React.FC<CardProps> = ({ car }) => {
 
@@ -8,10 +9,15 @@ const Card: React.FC<CardProps> = ({ car }) => {
     const carIdType = car.id.split("-")[0];
 
     return (
-        <div
-            className="flex-col p-16 tap-area card-hover"
+        <View
+            className="flex-col p-16 tap-area card-hover m-48"
             style={{
                 width: '18rem'
+            }}
+            extend={{
+                onlyS:{
+                    margin: 16
+                }
             }}
         >
             <a
@@ -35,11 +41,14 @@ const Card: React.FC<CardProps> = ({ car }) => {
                         {car.modelType}
                     </span>
                 </h3>
+                <div className="car-image-wrapper">
                 <img
 
-                    alt={car.modelName}
-                    src={car.imageUrl}
-                />
+alt={car.modelName}
+src={car.imageUrl}
+/>
+                </div>
+                
             </a>
             <div className="flex flex-wrap gap-x-24 justify-center">
                 <a
@@ -59,7 +68,7 @@ const Card: React.FC<CardProps> = ({ car }) => {
                     Shop
                 </a>
             </div>
-        </div>
+        </View>
 
 
     )

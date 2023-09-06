@@ -1,0 +1,26 @@
+
+.splide__arrows{
+    .splide__arrow--next{
+        top: 32vw;
+        right: 8%;
+    }
+    .splide__arrow--prev{
+        top: 32vw;
+        left: unset;
+        right: 13%;
+    }
+}
+
+.splide__pagination__page.is-active{
+    background: black;
+}
+
+@media(min-width:992px){
+    .splide__pagination{
+        display: none;
+    }
+}
+
+.splide:not(.is-overflow) .splide__arrows ,.splide:not(.is-overflow) .splide__pagination{
+    display: none;
+  }

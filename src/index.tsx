@@ -7,6 +7,8 @@ import { StyleProvider,ThemePicker } from 'vcc-ui';
 
 import { links } from '@volvo-cars/css/links';
 
+
+
 const fragment = document.createDocumentFragment();
 for (const link of links()) {
   fragment.append(Object.assign(document.createElement('link'), link));
