@@ -2,7 +2,9 @@ import CardProps from "../../interfaces/card-props";
 import "./card.styles.scss";
 import { View } from "vcc-ui";
 
+//get props from interface
 const Card: React.FC<CardProps> = ({ car }) => {
+
   const carIdType = car.id.split("-")[0];
 
   return (
