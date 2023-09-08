@@ -17,6 +17,10 @@ npx create-react-app volvo-recharge-cars --template typescript
 The project is hosted on Netlify [here](https://wonderful-sable-cf8271.netlify.app/).
 
 
+
+
+
+
 ## Features
 
 ### Styling
@@ -59,6 +63,8 @@ The app is designed to be responsive, adapting to different screen sizes. It pro
 
 ### Context API
 To manage and share data across components, I implemented the **Context API**. The data context is created and provided in context file. Components that need access to the data use the useContext hook to retrieve it.
+
+
 
 
 ## Conclusion
