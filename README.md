@@ -46,7 +46,6 @@ I have created components, interfaces to achieve ***reusability*** and ***Separa
 ### Filtering by Body Type
 I added a feature to filter cars by body type. I used the **<Select>** component from **"@volvo-cars/react-forms"** to create a dropdown list for selecting body types.
 
-
 ### Slides
 For creating slides, I used the **"react-splide"** library. Slides are used to display car details with images and information.
 

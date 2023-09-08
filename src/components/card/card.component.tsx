@@ -17,7 +17,7 @@ const Card: React.FC<CardProps> = ({ car }) => {
         onlyS: {
           margin: 0,
           paddingLeft:10,
-          paddingBottom:50
+          marginBottom:50
         },
       }}
     >
