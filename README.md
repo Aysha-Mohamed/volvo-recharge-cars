@@ -25,7 +25,7 @@ The project is hosted on Netlify [here](https://wonderful-sable-cf8271.netlify.a
 
 ### Styling
 
-For styling, I used the **"@volvo-cars/css"** package and **vcc-ui**, which includes Volvo's CSS styles. I also customized some styles for specific elements.
+For styling, I used the ***"@volvo-cars/css"*** package and ***vcc-ui***, which includes Volvo's CSS styles. I also customized some styles for specific elements.
 
 ### Responsive Design
 The app is designed to be responsive, adapting to different screen sizes. It provides an optimal viewing experience on both desktop and mobile devices.
@@ -44,7 +44,7 @@ I created components for displaying the car list and individual car details. To 
 I have created components, interfaces to achieve ***reusability*** and ***Separation of concerns***.
 
 ### Filtering by Body Type
-I added a feature to filter cars by body type. I used the **<Select>** component from **"@volvo-cars/react-forms"** to create a dropdown list for selecting body types.
+I added a feature to filter cars by body type. I used the ***Select*** component from ***"@volvo-cars/react-forms"*** to create a dropdown list for selecting body types.
 
 ### Slides
 For creating slides, I used the **"react-splide"** library. Slides are used to display car details with images and information.
@@ -61,7 +61,7 @@ The app is designed to be responsive, adapting to different screen sizes. It pro
 
 
 ### Context API
-To manage and share data across components, I implemented the **Context API**. The data context is created and provided in context file. Components that need access to the data use the useContext hook to retrieve it.
+To manage and share data across components, I implemented the ***Context API***. The data context is created and provided in context file. Components that need access to the data use the useContext hook to retrieve it.
 
 
 
