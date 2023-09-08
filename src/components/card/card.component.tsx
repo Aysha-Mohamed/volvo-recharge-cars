@@ -9,13 +9,15 @@ const Card: React.FC<CardProps> = ({ car }) => {
 
   return (
     <View
-      className="flex-col p-16 tap-area card-hover m-48"
+      className="flex-col p-16 sm:p-0 tap-area card-hover m-48"
       style={{
         width: "18rem",
       }}
       extend={{
         onlyS: {
-          margin: 16,
+          margin: 0,
+          paddingLeft:10,
+          paddingBottom:50
         },
       }}
     >

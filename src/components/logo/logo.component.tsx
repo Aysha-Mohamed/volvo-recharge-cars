@@ -6,7 +6,7 @@ const Logo = () =>{
     return(
         <div className="volvo_v0">
             <Link to="/">
-            <Wordmark className="m-16 md:m-24"/>
+            <Wordmark className="m-24"/>
             </Link>
             <Outlet />
         </div>

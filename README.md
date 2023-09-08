@@ -1,46 +1,74 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Volvo Cars Sverige
 
-## Available Scripts
+This React app with TypeScript showcases a collection of Volvo Recharge cars and provides features for filtering and displaying car details.
 
-In the project directory, you can run:
 
-### `npm start`
+## Project Setup
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+I initiated the creation of this app using Create React App with TypeScript:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```sh
+npx create-react-app volvo-recharge-cars --template typescript
 
-### `npm test`
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+The project is hosted on Netlify [here](https://wonderful-sable-cf8271.netlify.app/).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Styling
 
-### `npm run eject`
+For styling, I used the **"@volvo-cars/css"** package and **vcc-ui**, which includes Volvo's CSS styles. I also customized some styles for specific elements.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Responsive Design
+The app is designed to be responsive, adapting to different screen sizes. It provides an optimal viewing experience on both desktop and mobile devices.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Routing
+The project includes routing using React Router. I've created routes for displaying car details based on car IDs.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+I've generated the links to the learn and shop pages of each car by concatating the id of the car to the learn (/learn/) and shop (/shop/) urls. 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+You can navigate to learn and shop page by clicking on the ***Learn*** and ***Shop*** displayed in the Car list.
 
-## Learn More
+In detail page, a button for ***Shop*** is provided, which can be used to navigate to Shop page too.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Components and Interfaces
+I created components for displaying the car list and individual car details. To handle data types, I used TypeScript interfaces. 
+I have created components, interfaces to achieve ***reusability*** and ***Separation of concerns***.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Filtering by Body Type
+I added a feature to filter cars by body type. I used the **<Select>** component from **"@volvo-cars/react-forms"** to create a dropdown list for selecting body types.
+
+
+### Slides
+For creating slides, I used the **"react-splide"** library. Slides are used to display car details with images and information.
+
+### Continuous Deployment with GitHub and Netlify
+
+This project is set up for continuous deployment using GitHub and Netlify. Any changes made to the GitHub repository automatically trigger updates to the deployed webpage on Netlify. This ensures that the live site is always up to date with the latest changes in the codebase.
+
+### Responsive Design
+The app is designed to be responsive, adapting to different screen sizes. It provides an optimal viewing experience on both desktop and mobile devices.
+
+- In the desktop view, users can navigate through the slides using ***arrow buttons***. However, in the mobile view, ***pagination*** is available for slide navigation.
+- In the desktop view, the Learn page features a Shop button located near the car details. In the mobile view, this button is positioned fixed at the bottom of the screen.
+
+
+### Context API
+To manage and share data across components, I implemented the **Context API**. The data context is created and provided in context file. Components that need access to the data use the useContext hook to retrieve it.
+
+
+## Conclusion
+
+I am excited to submit this project as part of my application for the Volvo job opportunity. It has been a rewarding experience working on this assignment and developing this React app. I believe that the features, styling, and responsive design of this application reflect my commitment to delivering high-quality work.
+
+If you have any questions or need further information regarding this project or my application, please feel free to [contact](ayshamohd01@gmail.com) me. I am looking forward to the possibility of contributing to Volvo's innovative projects and becoming a valuable member of your team.
+
+Thank you for considering my application.
+
+Best regards,
+
+Aysha Mohamed.

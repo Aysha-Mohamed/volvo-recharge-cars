@@ -12,7 +12,7 @@ const CarDetails = () => {
   const carInfo = carsListContext.filter((car) => car.id === carId);
 
   return (
-    <div className="volvo_v0">
+    <div className="volvo_v0 ">
       {carInfo.length && (
         <>
           <div className="w-md  container-md  pt-32 pb-32">
@@ -33,12 +33,13 @@ const CarDetails = () => {
                 </a>
               </div>
             </div>
-
-            <img
-              className="w-md"
+       
+        <img className="w-md"
               src={carInfo[0].imageUrl}
               alt={carInfo[0].modelName}
             />
+      
+           
           </div>
 
           <Footer carName={carInfo[0].modelName} carId={carInfo[0].id} />

@@ -10,7 +10,7 @@ import "./styles.scss"
 const Slider:React.FC<SliderProps> = ({ filteredCars, setFilteredCars}) =>{
 
     return(
-        <div className='car-list-wrapper'>
+        <div className='car-list-wrapper pl-16 '>
         <Splide options={{
           perPage: 4,
           breakpoints: {

@@ -36,9 +36,10 @@ const CarFilter: React.FC<CarFilterProps> = ({ cars, setFilteredCars }) => {
     <View
       extend={{
         margin: "0 auto",
-        onlyS: {
-          width: 300,
-        },
+        // onlyS: {
+        //   width:'100vw',
+          
+        // },
         fromM: {
           width: 500,
         },
@@ -49,6 +50,7 @@ const CarFilter: React.FC<CarFilterProps> = ({ cars, setFilteredCars }) => {
         name="bodyType"
         label="Select a car model"
         autoComplete="on"
+        className='m-16'
       >
         <option value="">{`ALL CARS(${allCount})`}</option>
         <option value="suv">{`SUV(${suvCount})`}</option>
