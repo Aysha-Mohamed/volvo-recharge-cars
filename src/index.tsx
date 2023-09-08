@@ -6,6 +6,8 @@ import reportWebVitals from './reportWebVitals';
 import { StyleProvider,ThemePicker } from 'vcc-ui';
 
 import { links } from '@volvo-cars/css/links';
+import { BrowserRouter } from 'react-router-dom';
+import { CarProvider } from './context/car-context';
 
 
 
@@ -20,8 +22,14 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <StyleProvider>
-    <ThemePicker variant="dark">
+    <ThemePicker>
+      <BrowserRouter>
+      <CarProvider>
       <App />
+      </CarProvider>
+      
+      </BrowserRouter>
+      
     </ThemePicker>
   </StyleProvider>
     

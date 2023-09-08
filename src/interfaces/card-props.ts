@@ -1,4 +1,4 @@
-import Car from "../interfaces/Car";
+import Car from "./car-props";
 
 interface CardProps {
     car: Car

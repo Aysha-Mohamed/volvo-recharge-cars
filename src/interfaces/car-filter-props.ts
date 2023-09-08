@@ -1,4 +1,4 @@
-import Car from "./Car"
+import Car from "./car-props"
 
 interface CarFilterProps {
     cars: Car[],

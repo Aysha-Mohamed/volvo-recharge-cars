@@ -24,3 +24,17 @@
 .splide:not(.is-overflow) .splide__arrows ,.splide:not(.is-overflow) .splide__pagination{
     display: none;
   }
+
+@media(min-width: 1023px) and (max-width:1181px){
+    .splide__arrows{
+        .splide__arrow--next{
+            top: 40vw;
+        }
+        .splide__arrow--prev{
+            top:40vw;
+        }
+    }
+    
+}
+
+
