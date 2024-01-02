@@ -68,8 +68,6 @@ To manage and share data across components, I implemented the ***Context API***.
 
 ## Conclusion
 
-I am excited to submit this project as part of my application for the Volvo job opportunity. It has been a rewarding experience working on this assignment and developing this React app. I believe that the features, styling, and responsive design of this application reflect my commitment to delivering high-quality work.
-
 If you have any questions or need further information regarding this project or my application, please feel free to [contact](ayshamohd01@gmail.com) me. I am looking forward to the possibility of contributing to Volvo's innovative projects and becoming a valuable member of your team.
 
 Thank you for considering my application.
